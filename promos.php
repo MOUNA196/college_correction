@@ -2,9 +2,9 @@
 require_once("models/promo.php");
 $promos = Promo::readAll();
 
-echo "<pre>";
-var_dump($promos);
-echo"</pre>";
+//echo "<pre>";
+//var_dump($promos);
+//echo"</pre>";
 ?>
 
 
@@ -27,8 +27,10 @@ include ("assets/inc/header.php");
         <th>Nom</th>
         <th>Niveau</th>
         <th>id_professeurs</th>
+        <th>action</th>
         </tr>
         <?php
+    // afficher la liste de chaque promos, et de son prof principale avec la boucle foreach
         foreach ($promos as $promo) {
             $promo->afficherInfos();
         }

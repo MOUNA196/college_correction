@@ -15,7 +15,7 @@ class Promo
  
     function afficherInfos()
     {
-        echo "<tr><td>" . $this->id_classes . " </td><td>". $this->nom . " </td><td>" . $this->niveau . "</td><td> ".$this->id_professeurs ."</td></tr>";
+        echo "<tr><td>" . $this->id_classes . " </td><td>". $this->nom . " </td><td>" . $this->niveau . "</td><td> ".$this->id_professeurs ."</td><td><a href=\"#\"><button>Afficher</button>"."</td></tr>";
     }
     // static Création d'une méthode statique, qui concerne le concept d'eleve en général,afin de récupérer la liste des élèves
     static function readAll(): array
